@@ -15,6 +15,10 @@
 // 1. -----Creare una pagina desicata dove visualizzare la password generata.
 // 2. Usare $_SESSION per mostrare la password.
 
+if(isset($_GET['numero'])){
+    echo pswMind($_GET['numero']);
+}
+
 ?>
 
 <!DOCTYPE html>
