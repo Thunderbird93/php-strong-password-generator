@@ -1,12 +1,22 @@
 <?php
 session_start();
+
+//echo __DIR__;
+
 //var_dump($num);
 
 // -- Milestone 3 --
 // 1. -----Creare una pagina desicata dove visualizzare la password generata.
 // 2. Usare $_SESSION per mostrare la password.
 
-include './functions.php';
+include __DIR__ . '/functions.php';
+
+if(!empty($_GET['numero'])){
+    $response = pswMind($_GET['numero']);
+}else{
+    $response = '';
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -25,9 +35,7 @@ include './functions.php';
             <button type="submit">Crea Password</button>
         </form>
         <h1>La tua password: <?php 
-        if(isset($_GET['numero'])){
-            echo pswMind($_GET['numero']);
-        }
+            echo $response;
         ?> </h1>
     </main>
 </body>
