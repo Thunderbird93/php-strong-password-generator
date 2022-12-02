@@ -13,6 +13,10 @@ function pswMind($num){
     }
 }
 
+if(isset($_GET['numero'])){
+    pswMind($num);
+}
+
 // -- Milestone 1 --
 // 1.-----Creare un Form.
 // 2.-----Usando "GET" devo prendere ed inviare la lunghezza della  password (un numero)
