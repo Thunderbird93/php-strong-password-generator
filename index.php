@@ -32,7 +32,6 @@
             <input type="number" name="numero" placeholder="Inserisci un numero">
             <button type="submit">Crea Password</button>
         </form>
-        <h1>La tua password: <?php echo(@$psw); ?> </h1>
     </main>
 </body>
 </html>
