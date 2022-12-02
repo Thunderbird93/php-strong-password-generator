@@ -12,7 +12,7 @@
 // 2. -----Spostare la logica in un file functions.php
 
 // -- Milestone 3 --
-// 1. Creare una pagina desicata dove visualizzare la password generata.
+// 1. -----Creare una pagina desicata dove visualizzare la password generata.
 // 2. Usare $_SESSION per mostrare la password.
 
 ?>
