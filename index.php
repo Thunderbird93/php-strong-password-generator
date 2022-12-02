@@ -1,12 +1,12 @@
 <?php
+session_start();
 //var_dump($num);
 
 // -- Milestone 3 --
 // 1. -----Creare una pagina desicata dove visualizzare la password generata.
 // 2. Usare $_SESSION per mostrare la password.
 
-
-
+include './functions.php';
 ?>
 
 <!DOCTYPE html>
