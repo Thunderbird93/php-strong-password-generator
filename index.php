@@ -1,8 +1,11 @@
 <?php
 
 $num = $_GET['numero'];
-var_dump($num);
+//var_dump($num);
 
+function pswMind($num){
+
+}
 
 // -- Milestone 1 --
 // 1.-----Creare un Form.
