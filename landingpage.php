@@ -1,5 +1,5 @@
 <?php
-osmosi();
+session_start();
 
 ?>
 

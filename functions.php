@@ -1,5 +1,6 @@
 <?php
-osmosi();
+session_start();
+
 
 function pswMind($num){
     $psw = '';
