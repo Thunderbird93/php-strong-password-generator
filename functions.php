@@ -1,4 +1,6 @@
 <?php
+osmosi();
+
 function pswMind($num){
     $psw = '';
     $accepted = '!?&%$<>^+-*/()[]{}@#_=0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';

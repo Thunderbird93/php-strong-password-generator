@@ -1,5 +1,5 @@
 <?php
-
+osmosi();
 //var_dump($num);
 
 // -- Milestone 1 --
