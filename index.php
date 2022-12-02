@@ -8,6 +8,9 @@ function pswMind($num){
     $psw = [];
     $accepted = '!?&%$<>^+-*/()[]{}@#_=0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
     $num;
+    while (0<$num){
+        
+    }
 }
 
 // -- Milestone 1 --
