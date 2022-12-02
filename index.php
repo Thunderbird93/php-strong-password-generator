@@ -14,10 +14,11 @@ if(!empty($_GET['numero'])){
     $response = pswMind($_GET['numero']);
     if($response){
         session_start();
-        $_SESSION['numero'];
+        $_SESSION['numero'] = $response;
         header('Location: ./landingpage.php');
     }
 }
+
 
 ?>
 
