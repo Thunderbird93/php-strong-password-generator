@@ -9,7 +9,7 @@ function pswMind($num){
     $accepted = '!?&%$<>^+-*/()[]{}@#_=0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
     $num;
     while (0<$num){
-        
+        $psw.=$accepted[random_int(0, strlen($accepted)-1)];
     }
 }
 
@@ -34,6 +34,7 @@ function pswMind($num){
             <input type="number" name="numero" placeholder="Inserisci un numero">
             <button type="submit">Crea Password</button>
         </form>
+        <h1>La tua password: <?php echo(@$psw); ?> </h1>
     </main>
 </body>
 </html>
