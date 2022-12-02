@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 //echo __DIR__;
 
@@ -13,6 +12,11 @@ include __DIR__ . '/functions.php';
 
 if(!empty($_GET['numero'])){
     $response = pswMind($_GET['numero']);
+    if($response){
+        session_start();
+        $_SESSION['numero'];
+        header('Location: ./landingpage.php');
+    }
 }else{
     $response = '';
 }
@@ -34,9 +38,6 @@ if(!empty($_GET['numero'])){
             <input type="number" name="numero" placeholder="Inserisci un numero">
             <button type="submit">Crea Password</button>
         </form>
-        <h1>La tua password: <?php 
-            echo $response;
-        ?> </h1>
     </main>
 </body>
 </html>
