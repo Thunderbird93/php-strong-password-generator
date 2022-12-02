@@ -1,5 +1,6 @@
 <?php
 session_start();
+include __DIR__ . '/functions.php';
 //var_dump($num);
 
 // -- Milestone 1 --
