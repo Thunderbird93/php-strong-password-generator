@@ -1,24 +1,11 @@
 <?php
-session_start();
-include __DIR__ . '/functions.php';
 //var_dump($num);
-
-// -- Milestone 1 --
-// 1.-----Creare un Form.
-// 2.-----Usando "GET" devo prendere ed inviare la lunghezza della  password (un numero)
-// 3.-----Creare una Funzione per generare una password casuale (lettere min. e maius. numeri e simboli)
-
-// -- Milestone 2 --
-// 1. -----Verifico il corretto funzionamento.
-// 2. -----Spostare la logica in un file functions.php
 
 // -- Milestone 3 --
 // 1. -----Creare una pagina desicata dove visualizzare la password generata.
 // 2. Usare $_SESSION per mostrare la password.
 
-if(isset($_GET['numero'])){
-    echo pswMind($_GET['numero']);
-}
+
 
 ?>
 
@@ -37,6 +24,11 @@ if(isset($_GET['numero'])){
             <input type="number" name="numero" placeholder="Inserisci un numero">
             <button type="submit">Crea Password</button>
         </form>
+        <h1>La tua password: <?php 
+        if(isset($_GET['numero'])){
+            echo pswMind($_GET['numero']);
+        }
+        ?> </h1>
     </main>
 </body>
 </html>

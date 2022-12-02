@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 ?>
 
@@ -12,6 +11,9 @@ session_start();
     <title>PHP STRONG PASSWORD GENERATOR - Landing Page</title>
 </head>
 <body>
-    <h1>La tua password: <?php echo(@$psw); ?> </h1>
+    <h1>La tua password: <?php 
+        if(isset($_GET['numero'])){
+        echo pswMind($_GET['numero']);}?> 
+    </h1>
 </body>
 </html>
