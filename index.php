@@ -2,21 +2,6 @@
 
 //var_dump($num);
 
-
-function pswMind($num){
-    $psw = '';
-    $accepted = '!?&%$<>^+-*/()[]{}@#_=0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-    
-    while (strlen($psw)<$num){
-        $psw.=$accepted[random_int(0, strlen($accepted)-1)];
-    }
-    return $psw;
-}
-
-if(isset($_GET['numero'])){
-    echo pswMind($_GET['numero']);
-}
-
 // -- Milestone 1 --
 // 1.-----Creare un Form.
 // 2.-----Usando "GET" devo prendere ed inviare la lunghezza della  password (un numero)
@@ -24,7 +9,7 @@ if(isset($_GET['numero'])){
 
 // -- Milestone 2 --
 // 1. -----Verifico il corretto funzionamento.
-// 2. Spostare la logica in un file functions.php
+// 2. -----Spostare la logica in un file functions.php
 
 ?>
 
