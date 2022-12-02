@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+var_dump($_SESSION);
 
 ?>
 
@@ -14,7 +15,7 @@ session_start();
 </head>
 <body>
     <h1>La tua password: 
-        <?php echo $_SESSION['numero']; ?> 
+        <?php echo $_SESSION['numero'] ?> 
     </h1>
 </body>
 </html>

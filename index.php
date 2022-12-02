@@ -17,8 +17,6 @@ if(!empty($_GET['numero'])){
         $_SESSION['numero'];
         header('Location: ./landingpage.php');
     }
-}else{
-    $response = '';
 }
 
 ?>
