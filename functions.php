@@ -8,7 +8,3 @@ function pswMind($num){
     }
     return $psw;
 }
-
-if(isset($_GET['numero'])){
-    echo pswMind($_GET['numero']);
-}
