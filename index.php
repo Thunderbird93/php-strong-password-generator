@@ -7,7 +7,7 @@ $num = $_GET['numero'];
 function pswMind($num){
     $psw = [];
     $accepted = '!?&%$<>^+-*/()[]{}@#_=0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-
+    $num;
 }
 
 // -- Milestone 1 --
