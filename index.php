@@ -21,6 +21,11 @@ if(isset($_GET['numero'])){
 // 1.-----Creare un Form.
 // 2.-----Usando "GET" devo prendere ed inviare la lunghezza della  password (un numero)
 // 3.-----Creare una Funzione per generare una password casuale (lettere min. e maius. numeri e simboli)
+
+// -- Milestone 2 --
+// 1. -----Verifico il corretto funzionamento.
+// 2. Spostare la logica in un file functions.php
+
 ?>
 
 <!DOCTYPE html>
